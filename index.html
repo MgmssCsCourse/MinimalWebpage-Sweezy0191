@@ -1,11 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Ich bins doch</title>
-    </head>
-    <body>
-        <h1>Lauter Beleidigungen</h1>
-        <p>Es kann vorkommen, dass wir andere am leufeneden Band beleidigen. Das macht Spass, wenn Du nicht gerade ein <big>Truthahn</big> bist.</p>
-	</body>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasse Tiere Galerie</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #edf3ff;
+            color: #333;
+        }
+
+        /* ===== HEADER / BRANDING ===== */
+        header {
+            background: #3b74e6;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #3b74e6;
+            font-weight: bold;
+            animation: splash 2s ease-in-out infinite;
+        }
+
+        @keyframes splash {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            background: #bdd6ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Animation */
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #d6e3ff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🐾</div>
+        <h1>Nasse Tiere</h1>
+        <p class="subtitle">Die offiziell nasseste Tiergalerie im Internet 🐶🐱🦆</p>
+    </header>
+
+    <div class="container">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="img/nass1.jpg" alt="Nass Tier 1">
+            <img src="img/nass2.jpg" alt="Nass Tier 2">
+            <img src="img/nass3.jpg" alt="Nass Tier 3">
+        </div>
+    </div>
+
+    <footer>
+        © 2026 – Nasse Tiere Projekt
+    </footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasse Tiere Galerie</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #edf3ff;
+            color: #333;
+        }
+
+        /* ===== HEADER / BRANDING ===== */
+        header {
+            background: #3b74e6;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #3b74e6;
+            font-weight: bold;
+            animation: splash 2s ease-in-out infinite;
+        }
+
+        @keyframes splash {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            background: #bdd6ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Animation */
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #d6e3ff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🐾</div>
+        <h1>Nasse Tiere</h1>
+        <p class="subtitle">Die offiziell nasseste Tiergalerie im Internet 🐶🐱🦆</p>
+    </header>
+
+    <div class="container">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="img/nass1.jpg" alt="Nass Tier 1">
+            <img src="img/nass2.jpg" alt="Nass Tier 2">
+            <img src="img/nass3.jpg" alt="Nass Tier 3">
+        </div>
+    </div>
+
+    <footer>
+        © 2026 – Nasse Tiere Projekt
+    </footer>
+
+</body>
 </html>
