@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Nasse Tiere</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eine kleine, humorvolle Sammlung von nassen Tieren mit Bildern und kurzen Beschreibungen.">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
             background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
         }
+
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            font-size: 36px;
         }
+
+        .beschreibung {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            color: #555;
+        }
+
         .tier {
             background: white;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
+        .tier:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+        }
+
+        .tier h2 {
+            margin-top: 0;
+        }
+
+        .tier p {
+            color: #666;
+            font-size: 15px;
+        }
+
         img {
             width: 100%;
             max-width: 500px;
@@ -27,32 +59,81 @@
             display: block;
             margin-top: 10px;
         }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
 
     <h1>Nasse Tiere</h1>
-    <p style="text-align:center;">Eine kleine Sammlung nasser Tiere.</p>
+
+    <p class="beschreibung">
+        Willkommen auf dieser kleinen Seite über nasse Tiere.  
+        Hier findest du einige lustige und ungewöhnliche Bilder von Tieren,
+        die gerade vom Regen überrascht wurden oder aus dem Wasser kommen.
+        Auch wenn sie etwas zerzaust aussehen, sind sie trotzdem unglaublich niedlich.
+    </p>
 
     <div class="tier">
         <h2>Nasse Katze</h2>
-        <img src="images/IMG_1247.JPG" alt="Nasse Katze">
+
+        <p>
+            Katzen sind normalerweise sehr darauf bedacht, trocken und sauber zu bleiben.
+            Wenn eine Katze jedoch nass wird, sieht ihr Fell oft dünn und zerzaust aus.
+            Dadurch wirkt sie manchmal ganz anders als sonst – aber gerade das macht
+            solche Bilder oft besonders lustig und interessant.
+        </p>
+
+        <img src="images/IMG_1247.JPG" alt="Eine nasse Katze mit zerzaustem Fell">
     </div>
 
     <div class="tier">
         <h2>Nasse Eule</h2>
-        <img src="images/IMG_1244.JPG" alt="Nasse Eule">
+
+        <p>
+            Eulen besitzen ein sehr dichtes Federkleid, das sie normalerweise gut vor
+            Wind und Wetter schützt. Wird eine Eule jedoch richtig nass, können sich
+            ihre Federn zusammenlegen, wodurch sie viel kleiner und schlanker wirkt
+            als gewöhnlich.
+        </p>
+
+        <img src="images/IMG_1244.JPG" alt="Eine Eule mit nassem Gefieder">
     </div>
 
     <div class="tier">
         <h2>Nasser Hamster</h2>
-        <img src="images/IMG_1245.WEBP" alt="Nasser Hamster">
+
+        <p>
+            Hamster sind kleine Nagetiere mit einem sehr weichen Fell. Wenn sie nass
+            werden, verliert ihr Fell schnell sein flauschiges Aussehen. Dadurch
+            wirkt ein Hamster plötzlich viel kleiner und ganz anders als man ihn
+            normalerweise kennt.
+        </p>
+
+        <img src="images/IMG_1245.WEBP" alt="Ein kleiner Hamster mit nassem Fell">
     </div>
 
     <div class="tier">
         <h2>Nasser Bär</h2>
-        <img src="images/IMG_1248.AVIF" alt="Nasser Bär">
+
+        <p>
+            Bären haben ein dickes Fell, das sie normalerweise warm und trocken hält.
+            Nach einem Bad im Wasser oder einem starken Regenschauer kann ihr Fell
+            jedoch stark zusammenfallen, wodurch sie manchmal überraschend schlank
+            aussehen – zumindest im Vergleich zu ihrem sonstigen Erscheinungsbild.
+        </p>
+
+        <img src="images/IMG_1248.AVIF" alt="Ein Bär mit nassem Fell nach dem Baden">
     </div>
+
+    <footer>
+        Kleine Sammlung nasser Tiere • Beispielseite für Bilder und HTML-Layout
+    </footer>
 
 </body>
 </html>
